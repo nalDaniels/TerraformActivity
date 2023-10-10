@@ -12,6 +12,7 @@ resource "aws_instance" "tf_activity" {
   ami = "ami-08c40ec9ead489470"
   instance_type = "t2.micro"
   vpc_security_group_ids = "sg-0d3b35d6cac538da3"
+#associate the new instance with this subnet inside the vpc of your choosing
   subnet_id = "subnet-0172bafc656970b2d"
   associate_public_ip_address = true
   key_name = "NalaniDaniels894key"
